@@ -1,16 +1,15 @@
-# React + Vite
+Aim : Local and Global State Management in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Learning Outcomes :
 
-Currently, two official plugins are available:
+    1. Differentiate between local and global state in React
+    Explain when state should be kept inside a single component versus shared across multiple components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    2. Implement local state using useState
+    Manage and update component-specific data such as form inputs, toggles, or UI visibility.
 
-## React Compiler
+    3. Share data between components using global state
+    Use a global state approach (such as Context API or a state management library) to avoid excessive prop drilling.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    4. Identify and reduce prop drilling
+    Recognize when passing props through many component levels becomes inefficient and refactor using shared state.
